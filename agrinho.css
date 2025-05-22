@@ -8,7 +8,7 @@
       background-image: url('https://www.floretflowers.com/wp-content/uploads/2015/12/Floret_Seed-Starting-101-2.jpg');
       background-size: cover;
       background-position: center;
-      height: 100vh;
+      height: 300px;
       color: white;
       display: flex;
       flex-direction: column;
@@ -23,8 +23,6 @@
       font-size: 16px;
       border: none;
       border-radius: 5px;
-      background-color: rgba(0, 0, 0, 0.5);
-      color: white;
       cursor: pointer;
     }
 
@@ -35,4 +33,21 @@
 
     .cabeçalho img {
       display: none; 
+    }
+
+    @keyframes agrinho{
+        from{
+            opacity: 0;
+            scale: 0,4;
+        }
+        to{
+            opacity: 1;
+            scale: 1;
+        }
+    }
+
+    .block{
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0%;
     }
