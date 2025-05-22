@@ -1,15 +1,38 @@
-head > button{
-    align-items: center;
-    font-size: small;
-    display: inline-block;
-}
+ body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+    }
 
-head > h1{
-    font-size: medium;
-    align-items: normal;
-}
+    .cabeçalho {
+      background-image: url('https://www.floretflowers.com/wp-content/uploads/2015/12/Floret_Seed-Starting-101-2.jpg');
+      background-size: cover;
+      background-position: center;
+      height: 100vh;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 1px 1px 5px black;
+    }
 
-head > p{
-    height: 400px;
-    width: 100%;
-}
+    .cabeçalho button {
+      margin: 10px;
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+      cursor: pointer;
+    }
+
+    .cabeçalho h1 {
+      font-size: 36px;
+      margin-top: 20px;
+    }
+
+    .cabeçalho img {
+      display: none; 
+    }
