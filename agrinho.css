@@ -1,9 +1,15 @@
-head{
+head > button{
     align-items: center;
     font-size: small;
     display: inline-block;
-    height: 100px;
-    position: center;
-    width: 80000px;
+}
+
+head > h1{
     font-size: medium;
+    align-items: normal;
+}
+
+head > p{
+    height: 400px;
+    width: 100%;
 }
