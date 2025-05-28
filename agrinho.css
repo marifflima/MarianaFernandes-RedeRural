@@ -17,7 +17,8 @@ header{
 }
 
 .text{
-    margin-left: 550px;
+    align-items: center;
+    justify-content: center;
 }
 
 .ctext{
