@@ -1,36 +1,71 @@
- body, html {
+body, html, header {
       margin: 0;
       padding: 0;
       height: 100%;
       background-color: rgb(254, 255, 201);
     }
-.cabeçalho{
-      
+header{
+     display: flex;
+     height: 350px;
+     width: 100%;
+     background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(254, 255, 201, 1)),
+                       url('https://saiplatform.org/wp-content/uploads/2020/01/regag.jpg');
+     align-items: center;
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     background-position: center;
+     opacity: ;
+}
+
+.text{
+    margin-left: 550px;
+}
+
+.ctext{
+    margin-left: 20px;
 }
 
 .imagens {
-     height: 80px;
+     height: 100px;
      width: 200px;
-     overflow-x: inline flex;
-     gap: 20px;
      display: flex;
-     font-family: Georgia, 'Times New Roman', Times, serif;
-     font-size: 18px;
+     border-radius: 5px;
+     margin-left: 10px;
+     margin-right: 10px;
+}
+
+.carrossel1{
+    padding-top: 20px;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    min-height: 300px;
 }
 
 .descrição{
-  color: white;
+     color: rgb(0, 0, 0);
+     font-family: Georgia, 'Times New Roman', Times, serif;
+     font-size: 15px;
+}
+
+.carrossel1  p{
+    align-items: left;
+    margin-left: 5px;
 }
 
     @keyframes agrinho{
         from{
             opacity: 0;
-            scale: 0,4;
+            transform: scale(0,4);
         }
         to{
             opacity: 1;
-            scale: 1;
+            transform: (1);
         }
+    }
+
+    .block{
+        animation: appear 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0%;
     }
 
     .block{
