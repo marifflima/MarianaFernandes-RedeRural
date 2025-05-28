@@ -16,11 +16,15 @@ header{
      opacity: ;
 }
 
+.cabeçalho {
+    display: flex;
+    justify-content: center; 
+    align-items: center;    
+}
+
 .text{
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    font-size: 48px;
+    color: white;
 }
 
 .ctext{
