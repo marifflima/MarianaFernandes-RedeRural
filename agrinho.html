@@ -2,6 +2,7 @@
  
 <head>
     <link rel="stylesheet" href="./agrinho.css">
+    <script src="https://kit.fontawesome.com/a2c5b2a270.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -17,55 +18,227 @@
      <div class="legenda">
         <img src="https://valorfinanceiro.net/wp-content/uploads/2019/06/Entenda-o-que-%C3%A9-o-d%C3%B3lar-hoje-e-para-que-serve-a-cota%C3%A7%C3%A3o.jpg" class="imagens">
         <p class="descrição">Valor do Dólar dd/mm/aaaa</p> 
-        <p class="descrição">R$xx,xx</p> 
+        <p class="descrição" id="cotacao-dolar">U$</p> 
      </div>
      <div class="legenda">
         <img src="https://blog.perfarm.com/wp-content/uploads/2022/12/2022_12_14-blog-perfarm-graos-de-soja-envato-elements.jpg" class="imagens">
         <p class="descrição">Valor Soja dd/mm/aaaa</p> 
-        <p class="descrição">R$xx,xx</p> 
+        <p class="descrição" id="cotacao-soja">US$</p>
      </div>
      <div class="legenda">
         <img src="https://encolombia.com/wp-content/uploads/2021/09/Cultivo-de-Trigo.jpg" class="imagens">
         <p class="descrição">Valor Trigo dd/mm/aaaa</p> 
-        <p class="descrição">R$xx,xx</p>
+        <p class="descrição" id="cotacao-trigo">US$</p>
      </div>
      <div class="legenda">
         <img src="https://dicademusculacao.com.br/wp-content/uploads/2017/07/milho-3.jpg" class="imagens">
         <p class="descrição">Valor Milho dd/mm/aaaa</p> 
-        <p class="descrição">R$xx,xx</p>
+        <p class="descrição" id="cotacao-milho">US$</p>
      </div>
      <div class="legenda">
         <img src="http://www.myfarm.com.br/wp-content/uploads/2020/12/767723.jpeg" class="imagens">
         <p class="descrição">Valor Arroz dd/mm/aaaa</p> 
-        <p class="descrição">R$xx,xx</p>
+        <p class="descrição" id="cotacao-arroz">US$</p>
      </div>
      <div class="legenda">
         <img src="https://nutricaodesafras.com.br/wp-content/uploads/2022/10/plantacao-de-algodao.jpg" class="imagens">
         <p class="descrição">Valor Algodão dd/mm/aaaa</p> 
-        <p class="descrição">R$xx,xx</p>
+        <p class="descrição" id="cotacao-algodao">US$</p>
      </div>
      <div class="legenda">
         <img src="https://capitalist.com.br/wp-content/uploads/2020/02/copo-e-cafe-1.jpg" class="imagens">
         <p class="descrição">Valor Café dd/mm/aaaa</p>
-        <p class="descrição">R$xx,xx</p> 
+        <p class="descrição" id="cotacao-cafe">US$</p> 
      </div>
      </div>
     </div>
 
-    <div class="calendario">
-      <h1 class="ctext">Calendário de Plantio</h1>
-      <div class="calen">
-         <h2>Junho</h2>
-         <h3>Regiões &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;O que plantar neste mês</h3>
-         <p>Centro-Oeste &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tal tal coisa</p>
-         <p>Sul &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tal tal coisa</p>
-         <p>Sudeste &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;;&nbsp; tal tal coisa</p>
-         <p>Nordeste&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tal tal coisa</p>
-         <p>Norte&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;tal tal coisa</p>
+ <div class="titulo-principal">Calendário de Plantio</div>
+<div class="container-meses">
+  <div class="calendario">
+    <div class="calen">
+      <h2>Junho</h2>
+      <div class="tabela">
+        <div class="linha cabecalho">
+          <div class="celula">Regiões</div>
+          <div class="celula">O que plantar</div>
+          <div class="celula">O que podar</div>
+        </div>
+        <div class="linha"><div class="celula">Centro-Oeste</div><div class="celula">Inhame, </div></div>
+        <div class="linha"><div class="celula">Sul</div><div class="celula">Acelga, Alho, Cebola, Cenoura de inverno, Couve-flor de inverno, Melancia, Morango, Rabanete, </div></div>
+        <div class="linha"><div class="celula">Sudeste</div><div class="celula">Acelga, Morango, Rabanete, </div></div>
+        <div class="linha"><div class="celula">Nordeste</div><div class="celula"></div></div>
+        <div class="linha"><div class="celula">Norte</div><div class="celula">Inhame </div></div>
       </div>
     </div>
+  </div>
 
+  <div class="calendario">
+    <div class="calen">
+      <h2>Julho</h2>
+      <div class="tabela">
+        <div class="linha cabecalho">
+          <div class="celula">Regiões</div>
+          <div class="celula">O que plantar</div>
+          <div class="celula">O que podar</div>
+        </div>
+        <div class="linha"><div class="celula">Centro-Oeste</div><div class="celula">Alface de inverno, Almeirão, Chicória, Couve-flor de inverno, Repolho de inverno, Rúcula </div></div>
+        <div class="linha"><div class="celula">Sul</div><div class="celula">Acelga, Alface de inverno, Almeirão, Chicória, Couve-flor de inverno, Maxixe, Rabanete, Repolho de inverno, Rúcula </div></div>
+        <div class="linha"><div class="celula">Sudeste</div><div class="celula">Acelga, Almeirão, Cebola, Cenoura de inverno, Chicória, Couve-flor de inverno, Maxixe, Melancia, Rabanete, Repolho de inverno, Rúcula </div></div>
+        <div class="linha"><div class="celula">Nordeste</div><div class="celula">Alface de inverno, Almeirão, Chicória, Couve-flor de inverno, Repolho de inverno, Rúcula </div></div>
+        <div class="linha"><div class="celula">Norte</div><div class="celula"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<div class="caixa">
+  <div class="card" id="tempo">
+    <h2>Previsão do Tempo</h2>
+    <p id="cidade">Detectando localização...</p>
+    <p id="temperatura"></p>
+    <p id="descricao"></p>
+  </div>
+
+  <div class="card" id="lua">
+    <h2>Fase da Lua</h2>
+    <p id="fase-lua"></p>
+  </div>
+ </div>
+
+   <h1 class="ctext">Dúvidas frequentes</h1>
+    <div class="videos">
+   <div class="lista">
+   <iframe width="350" height="150" src="https://www.youtube.com/embed/hVu0I2GavUI?si=n-fSSmOY8fMyNAQ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+   <div class="lista">
+   <iframe width="350" height="150" src="https://www.youtube.com/embed/SGsyS0M0a0k?si=c0GU-kkSNe_CJXN8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+   </div>
+</div>
+
+   <h1 class="ctext">Contate nossos profissionais</h1>
+   <div class="profis">
+      <div class="perfis">
+         <img src="https://292aa00292a014763d1b-96a84504aed2b25fc1239be8d2b61736.ssl.cf1.rackcdn.com/PostImagem/25171/5-poses-para-retrato-corporativo_o1fjmj9fpu17n4kqk1q3134u1anpe.jpg" alt="">
+         <p class="ptext">Nome</p>
+         <p class="ptext">999999999999</p>
+      </div>
+       <div class="perfis">
+         <img src="https://292aa00292a014763d1b-96a84504aed2b25fc1239be8d2b61736.ssl.cf1.rackcdn.com/PostImagem/25171/5-poses-para-retrato-corporativo_o1fjmj9fpu17n4kqk1q3134u1anpe.jpg" alt="">
+         <p class="ptext">Nome</p>
+         <p class="ptext">999999999999</p>
+      </div>
+       <div class="perfis">
+         <img src="https://292aa00292a014763d1b-96a84504aed2b25fc1239be8d2b61736.ssl.cf1.rackcdn.com/PostImagem/25171/5-poses-para-retrato-corporativo_o1fjmj9fpu17n4kqk1q3134u1anpe.jpg" alt="">
+         <p class="ptext">Nome</p>
+         <p class="ptext">999999999999</p>
+      </div>
+   </div>
     </body>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const apiKey = 'VhIdA8lLXvYzcPqRuFU5Yg==p1qih1ZukoN75CHw'; 
+      let dolarHoje = 0;
+
+      fetch('https://api.api-ninjas.com/v1/exchangerate?pair=USD_BRL', {
+        headers: { 'X-Api-Key': apiKey }
+      })
+        .then(res => res.json())
+        .then(data => {
+          dolarHoje = data.exchange_rate;
+          document.getElementById('cotacao-dolar').textContent = `R$ ${dolarHoje.toFixed(2)}`;
+
+          buscarCotacao('soybean', 'cotacao-soja');
+          buscarCotacao('corn', 'cotacao-milho');
+          buscarCotacao('wheat', 'cotacao-trigo');
+          buscarCotacao('rice', 'cotacao-arroz');
+          buscarCotacao('cotton', 'cotacao-algodao');
+          buscarCotacao('coffee', 'cotacao-cafe');
+        })
+        .catch(() => {
+          document.getElementById('cotacao-dolar').textContent = 'Erro ao buscar dólar';
+        });
+
+      function buscarCotacao(nome, idHtml) {
+        fetch(`https://api.api-ninjas.com/v1/commodityprice?name=${nome}`, {
+          headers: { 'X-Api-Key': apiKey }
+        })
+          .then(res => res.json())
+          .then(data => {
+            if (data && data.price) {
+              const precoUSD = data.price;
+              const precoBRL = precoUSD * dolarHoje;
+              document.getElementById(idHtml).textContent = `R$ ${precoBRL.toFixed(2)} / bushel`;
+            } else {
+              document.getElementById(idHtml).textContent = 'Não encontrado';
+            }
+          })
+          .catch(() => {
+            document.getElementById(idHtml).textContent = 'Erro';
+          });
+      }
+    });
+
+     const keyTempo = '84f2afc6005fb367c69ad67ba187991b';
+    const keyLua = '1a6f64c213d04031890215218250206';
+
+    const climaParaIcone = {
+      'céu limpo': 'fa-sun',
+      'nuvens dispersas': 'fa-cloud-sun',
+      'algumas nuvens': 'fa-cloud',
+      'nublado': 'fa-smog',
+      'chuva leve': 'fa-cloud-rain',
+      'chuva': 'fa-cloud-showers-heavy',
+      'trovoada': 'fa-bolt',
+      'neve': 'fa-snowflake',
+      'névoa': 'fa-smog'
+    };
+
+    const luaParaIcone = {
+      'New Moon': 'fa-moon',
+      'Waxing Crescent': 'fa-moon',
+      'First Quarter': 'fa-adjust',
+      'Waxing Gibbous': 'fa-moon',
+      'Full Moon': 'fa-circle',
+      'Waning Gibbous': 'fa-moon',
+      'Last Quarter': 'fa-adjust',
+      'Waning Crescent': 'fa-moon'
+    };
+
+    navigator.geolocation.getCurrentPosition(pos => {
+      const lat = pos.coords.latitude;
+      const lon = pos.coords.longitude;
+
+      // Tempo
+      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${openWeatherKey}&lang=pt_br&units=metric`)
+        .then(res => res.json())
+        .then(data => {
+          const cidade = data.name;
+          const temp = Math.round(data.main.temp);
+          const desc = data.weather[0].description.toLowerCase();
+
+          document.getElementById('cidade').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${cidade}`;
+          document.getElementById('temperatura').innerHTML = `<i class="fas fa-thermometer-half"></i> ${temp}°C`;
+
+          const iconeClasse = climaParaIcone[desc] || 'fa-cloud';
+          document.getElementById('icone-clima').innerHTML = `<i class="fas ${iconeClasse}"></i> ${desc}`;
+        });
+
+      // Lua
+      const hoje = new Date().toISOString().split('T')[0];
+      fetch(`https://api.weatherapi.com/v1/astronomy.json?key=${weatherApiKey}&q=${lat},${lon}&dt=${hoje}`)
+        .then(res => res.json())
+        .then(data => {
+          const fase = data.astronomy.astro.moon_phase;
+          const iconeLua = luaParaIcone[fase] || 'fa-moon';
+          document.getElementById('icone-lua').innerHTML = `<i class="fas ${iconeLua}"></i> ${fase}`;
+        });
+
+    }, () => {
+      document.getElementById('cidade').textContent = 'Permissão negada para localização.';
+    });
+  </script>
 
 </html>
 
