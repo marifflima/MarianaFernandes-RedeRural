@@ -3,6 +3,7 @@ body, html, header {
       padding: 0;
       height: 100%;
       background-color: rgb(254, 255, 201);
+      font-family: Georgia, 'Times New Roman', Times, serif;
     }
 header{
      display: flex;
@@ -51,7 +52,6 @@ header{
 
 .descrição{
      color: rgb(0, 0, 0);
-     font-family: Georgia, 'Times New Roman', Times, serif;
      font-size: 15px;
 }
 
@@ -60,46 +60,126 @@ header{
     margin-left: 5px;
 }
 
-.calen h3{
-    align-items: left;
-    margin-left: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 20px;
-}
+  .titulo-principal {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 2em;
+    font-weight: bold;
+  }
 
-.calen h2{
-    align-items: left;
-    margin-left: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 25px;
-}
+  .container-meses {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    padding: 0 20px;
+  }
 
-.calen p{
-    align-items: left;
-    margin-left: 5px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 18px;
-}
+  .calendario {
+    text-align: center;
+  }
 
-    @keyframes agrinho{
-        from{
-            opacity: 0;
-            transform: scale(0,4);
-        }
-        to{
-            opacity: 1;
-            transform: (1);
-        }
+  .calen {
+    display: inline-block;
+    text-align: left;
+    margin-top: 10px;
+  }
+
+  .calen h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .tabela {
+    display: table;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-collapse: collapse;
+  }
+
+  .linha {
+    display: table-row;
+  }
+
+  .celula {
+    display: table-cell;
+    padding: 8px 16px;
+    vertical-align: top;
+  }
+
+  .cabecalho {
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+  }
+
+  .caixa{
+    justify-content: center;
+  }
+
+   .card {
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      padding: 20px;
+      max-width: 400px;
+      display: inline-block;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
-    .block{
-        animation: appear 5s linear;
-        animation-timeline: view();
-        animation-range: entry 0%;
+    .card h2 {
+      margin-bottom: 10px;
+      color: black;
+      text-align: center;
     }
 
-    .block{
-        animation: appear 5s linear;
-        animation-timeline: view();
-        animation-range: entry 0%;
+    .card p {
+      margin: 5px 0;
+      font-size: 16px;
+      text-align: center;
     }
+
+.videos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.lista {
+  flex: 1 1 300px; 
+  max-width: 350px;
+  aspect-ratio: 16 / 9;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.lista iframe {
+  width: 350;
+  height: 150;
+  border: none;
+  display: block;
+}
+
+.profis{
+  justify-content: center;
+  margin: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ptext{
+    text-align: center;
+}
+
+.perfis img{
+  border-radius: 100%;
+  height: 150px;
+  width: 150px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
