@@ -18,37 +18,37 @@
      <div class="legenda">
         <img src="https://valorfinanceiro.net/wp-content/uploads/2019/06/Entenda-o-que-%C3%A9-o-d%C3%B3lar-hoje-e-para-que-serve-a-cota%C3%A7%C3%A3o.jpg" class="imagens">
         <p class="descrição">Valor do Dólar dd/mm/aaaa</p> 
-        <p class="descrição" id="cotacao-dolar">U$</p> 
+        <p class="descrição" id="cotacao-dolar">RS$</p> 
      </div>
      <div class="legenda">
         <img src="https://blog.perfarm.com/wp-content/uploads/2022/12/2022_12_14-blog-perfarm-graos-de-soja-envato-elements.jpg" class="imagens">
         <p class="descrição">Valor Soja dd/mm/aaaa</p> 
-        <p class="descrição" id="cotacao-soja">US$</p>
+        <p class="descrição" id="cotacao-soja">R$</p>
      </div>
      <div class="legenda">
         <img src="https://encolombia.com/wp-content/uploads/2021/09/Cultivo-de-Trigo.jpg" class="imagens">
         <p class="descrição">Valor Trigo dd/mm/aaaa</p> 
-        <p class="descrição" id="cotacao-trigo">US$</p>
+        <p class="descrição" id="cotacao-trigo">R$</p>
      </div>
      <div class="legenda">
         <img src="https://dicademusculacao.com.br/wp-content/uploads/2017/07/milho-3.jpg" class="imagens">
         <p class="descrição">Valor Milho dd/mm/aaaa</p> 
-        <p class="descrição" id="cotacao-milho">US$</p>
+        <p class="descrição" id="cotacao-milho">R$</p>
      </div>
      <div class="legenda">
         <img src="http://www.myfarm.com.br/wp-content/uploads/2020/12/767723.jpeg" class="imagens">
         <p class="descrição">Valor Arroz dd/mm/aaaa</p> 
-        <p class="descrição" id="cotacao-arroz">US$</p>
+        <p class="descrição" id="cotacao-arroz">R$</p>
      </div>
      <div class="legenda">
         <img src="https://nutricaodesafras.com.br/wp-content/uploads/2022/10/plantacao-de-algodao.jpg" class="imagens">
         <p class="descrição">Valor Algodão dd/mm/aaaa</p> 
-        <p class="descrição" id="cotacao-algodao">US$</p>
+        <p class="descrição" id="cotacao-algodao">R$</p>
      </div>
      <div class="legenda">
         <img src="https://capitalist.com.br/wp-content/uploads/2020/02/copo-e-cafe-1.jpg" class="imagens">
         <p class="descrição">Valor Café dd/mm/aaaa</p>
-        <p class="descrição" id="cotacao-cafe">US$</p> 
+        <p class="descrição" id="cotacao-cafe">R$</p> 
      </div>
      </div>
     </div>
@@ -135,110 +135,6 @@
       </div>
    </div>
     </body>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      const apiKey = 'VhIdA8lLXvYzcPqRuFU5Yg==p1qih1ZukoN75CHw'; 
-      let dolarHoje = 0;
-
-      fetch('https://api.api-ninjas.com/v1/exchangerate?pair=USD_BRL', {
-        headers: { 'X-Api-Key': apiKey }
-      })
-        .then(res => res.json())
-        .then(data => {
-          dolarHoje = data.exchange_rate;
-          document.getElementById('cotacao-dolar').textContent = `R$ ${dolarHoje.toFixed(2)}`;
-
-          buscarCotacao('soybean', 'cotacao-soja');
-          buscarCotacao('corn', 'cotacao-milho');
-          buscarCotacao('wheat', 'cotacao-trigo');
-          buscarCotacao('rice', 'cotacao-arroz');
-          buscarCotacao('cotton', 'cotacao-algodao');
-          buscarCotacao('coffee', 'cotacao-cafe');
-        })
-        .catch(() => {
-          document.getElementById('cotacao-dolar').textContent = 'Erro ao buscar dólar';
-        });
-
-      function buscarCotacao(nome, idHtml) {
-        fetch(`https://api.api-ninjas.com/v1/commodityprice?name=${nome}`, {
-          headers: { 'X-Api-Key': apiKey }
-        })
-          .then(res => res.json())
-          .then(data => {
-            if (data && data.price) {
-              const precoUSD = data.price;
-              const precoBRL = precoUSD * dolarHoje;
-              document.getElementById(idHtml).textContent = `R$ ${precoBRL.toFixed(2)} / bushel`;
-            } else {
-              document.getElementById(idHtml).textContent = 'Não encontrado';
-            }
-          })
-          .catch(() => {
-            document.getElementById(idHtml).textContent = 'Erro';
-          });
-      }
-    });
-
-     const keyTempo = '84f2afc6005fb367c69ad67ba187991b';
-    const keyLua = '1a6f64c213d04031890215218250206';
-
-    const climaParaIcone = {
-      'céu limpo': 'fa-sun',
-      'nuvens dispersas': 'fa-cloud-sun',
-      'algumas nuvens': 'fa-cloud',
-      'nublado': 'fa-smog',
-      'chuva leve': 'fa-cloud-rain',
-      'chuva': 'fa-cloud-showers-heavy',
-      'trovoada': 'fa-bolt',
-      'neve': 'fa-snowflake',
-      'névoa': 'fa-smog'
-    };
-
-    const luaParaIcone = {
-      'New Moon': 'fa-moon',
-      'Waxing Crescent': 'fa-moon',
-      'First Quarter': 'fa-adjust',
-      'Waxing Gibbous': 'fa-moon',
-      'Full Moon': 'fa-circle',
-      'Waning Gibbous': 'fa-moon',
-      'Last Quarter': 'fa-adjust',
-      'Waning Crescent': 'fa-moon'
-    };
-
-    navigator.geolocation.getCurrentPosition(pos => {
-      const lat = pos.coords.latitude;
-      const lon = pos.coords.longitude;
-
-      // Tempo
-      fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${openWeatherKey}&lang=pt_br&units=metric`)
-        .then(res => res.json())
-        .then(data => {
-          const cidade = data.name;
-          const temp = Math.round(data.main.temp);
-          const desc = data.weather[0].description.toLowerCase();
-
-          document.getElementById('cidade').innerHTML = `<i class="fas fa-map-marker-alt"></i> ${cidade}`;
-          document.getElementById('temperatura').innerHTML = `<i class="fas fa-thermometer-half"></i> ${temp}°C`;
-
-          const iconeClasse = climaParaIcone[desc] || 'fa-cloud';
-          document.getElementById('icone-clima').innerHTML = `<i class="fas ${iconeClasse}"></i> ${desc}`;
-        });
-
-      // Lua
-      const hoje = new Date().toISOString().split('T')[0];
-      fetch(`https://api.weatherapi.com/v1/astronomy.json?key=${weatherApiKey}&q=${lat},${lon}&dt=${hoje}`)
-        .then(res => res.json())
-        .then(data => {
-          const fase = data.astronomy.astro.moon_phase;
-          const iconeLua = luaParaIcone[fase] || 'fa-moon';
-          document.getElementById('icone-lua').innerHTML = `<i class="fas ${iconeLua}"></i> ${fase}`;
-        });
-
-    }, () => {
-      document.getElementById('cidade').textContent = 'Permissão negada para localização.';
-    });
-  </script>
 
 </html>
 
