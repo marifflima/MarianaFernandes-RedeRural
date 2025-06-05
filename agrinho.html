@@ -215,35 +215,38 @@
       console.error('Erro ao fazer a requisição:', error);
     });
 
-    // Defina a URL da API (substitua pela URL real da API)
-const urlP = 'https://www.alphavantage.co/query?function=WHEAT&interval=monthly&apikey=demo'; // Substitua com a URL real da API
+    const urlt = "https://api.npoint.io/4ce2757e0762ead152ab";
 
-// Função para pegar os dados da API
-fetch(urlP)
-  .then(response => {
-    // Verifica se a resposta é ok (código 200)
-    if (!response.ok) {
-      throw new Error('Falha na requisição');
-    }
-    return response.json(); // Converte a resposta para JSON
-  })
-  .then(data => {
-    // Exibe as informações gerais da cotação
-    document.getElementById("cotacao-trigo").innerHTML = "R$ " + item.value;
-    console.log("Nome da Commodities:", data.name);
-    console.log("Intervalo:", data.interval);
-    console.log("Unidade de medida:", data.unit);
+  // Função para formatar a data no formato dd/mm/aaaa
+  function formatarData(dataISO) {
+    const data = new Date(dataISO);
+    const dia = String(data.getDate()).padStart(2, '0');
+    const mes = String(data.getMonth() + 1).padStart(2, '0');
+    const ano = data.getFullYear();
+    return `${dia}/${mes}/${ano}`;
+  }
 
-    // Processando os dados históricos
-    console.log("Histórico de Preços:");
-    data.data.forEach(item => {
-      console.log(`Data: ${item.date} | Preço: ${item.value} USD/tonelada`);
+  // Requisição para obter os dados da API
+  fetch(url)
+    .then(response => response.json())
+    .then(data => {
+      // Verifica se há dados disponíveis
+      if (data.data && data.data.length > 0) {
+        // Obtém o dado mais recente
+        const ultimoDado = data.data[0];
+        const dataFormatada = formatarData(ultimoDado.date);
+        const valor = parseFloat(ultimoDado.value).toFixed(2);
+
+        // Atualiza o conteúdo do elemento com id "cotacao-trigo"
+        document.getElementById("cotacao-trigo").innerText = `US$ ${valor} por tonelada em ${dataFormatada}`;
+      } else {
+        document.getElementById("cotacao-trigo").innerText = "Dados indisponíveis";
+      }
+    })
+    .catch(error => {
+      console.error("Erro ao buscar dados da API:", error);
+      document.getElementById("cotacao-trigo").innerText = "Erro ao carregar dados";
     });
-  })
-  .catch(error => {
-    console.error('Erro ao fazer a requisição:', error);
-  });
-
 </script>
 
 </html>
