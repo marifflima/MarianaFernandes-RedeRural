@@ -2,7 +2,10 @@
 
 <head>
   <link rel="stylesheet" href="./agrinho.css">
-  <script src="https://kit.fontawesome.com/a2c5b2a270.js" crossorigin="anonymous"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+  />
 </head>
 
 <body>
@@ -10,6 +13,11 @@
     <div class="cabeçalho">
       <h1 class="text">Bem Vindo!</h1>
     </div>
+
+  <div class="img">
+    <img src="https://saiplatform.org/wp-content/uploads/2020/01/regag.jpg">
+  </div>
+
   </header>
 
   <div class="carrossel1">
@@ -131,19 +139,19 @@
     </div>
   </div>
 
-  <div class="caixa">
-    <div class="card" id="tempo">
-      <h2>Previsão do Tempo</h2>
-      <p id="cidade">Detectando localização...</p>
-      <p id="temperatura"></p>
-      <p id="descricao"></p>
+<div class="temp-lua">
+    <div class="temp">
+      <h2>Temperatura dd/mm/aaaa</h2>
+      <i class="fa-solid fa-cloud-sun fa-4x" aria-hidden="true"></i>
+      <h3>Sol com Nuvens</h3>
+      <p>9℃ / 15℃</p>
     </div>
-
-    <div class="card" id="lua">
-      <h2>Fase da Lua</h2>
-      <p id="fase-lua"></p>
+        <div class="lua">
+      <h2>Fase da Lua dd/mm/aaaa</h2>
+      <i class="fa-solid fa-moon fa-4x" aria-hidden="true"></i>
+      <h3>Lua Nova</h3>
     </div>
-  </div>
+</div>
 
   <h1 class="ctext">Dúvidas frequentes</h1>
   <div class="videos">
@@ -185,68 +193,13 @@
       <p class="ptext">999999999999</p>
     </div>
   </div>
+
+  <footer>
+    <p>Trabalho realizado por Mariana Fátima Fernandes de Lima – 3º ano do Ensino Médio</p>
+    <p>Colégio Estadual Civívo-Militar Rui Barbosa</p>
+    <p>Projeto Agrinho – 2025</p>
+  </footer>
+
 </body>
-
-<script>
-  // URL da API (substitua pela URL real da sua API)
-  const url = "https://api.npoint.io/5598c9cbddcd50e05b04"; // Substitua com a URL real
-
-  // Fazendo a requisição GET para obter os dados
-  fetch(url)
-    .then(response => {
-      if (!response.ok) {
-        throw new Error('Falha na requisição');
-      }
-      return response.json(); // Converte a resposta para JSON
-    })
-    .then(data => {
-      // Exibindo os dados no console
-      console.log("Dados recebidos:", data);
-
-      const usdbtl = data.USDBRL;
-
-      // Exibindo as taxas de câmbio
-      console.log("Dólar Americano/Real Brasileiro:");
-      document.getElementById("cotacao-dolar").innerHTML = "R$ " + usdbtl.bid;
-      console.log("Bid:", usdbtl.bid);
-      console.log("Ask:", usdbtl.ask);
-    })
-    .catch(error => {
-      console.error('Erro ao fazer a requisição:', error);
-    });
-
-    const urlt = "https://api.npoint.io/4ce2757e0762ead152ab";
-
-  // Função para formatar a data no formato dd/mm/aaaa
-  function formatarData(dataISO) {
-    const data = new Date(dataISO);
-    const dia = String(data.getDate()).padStart(2, '0');
-    const mes = String(data.getMonth() + 1).padStart(2, '0');
-    const ano = data.getFullYear();
-    return `${dia}/${mes}/${ano}`;
-  }
-
-  // Requisição para obter os dados da API
-  fetch(url)
-    .then(response => response.json())
-    .then(data => {
-      // Verifica se há dados disponíveis
-      if (data.data && data.data.length > 0) {
-        // Obtém o dado mais recente
-        const ultimoDado = data.data[0];
-        const dataFormatada = formatarData(ultimoDado.date);
-        const valor = parseFloat(ultimoDado.value).toFixed(2);
-
-        // Atualiza o conteúdo do elemento com id "cotacao-trigo"
-        document.getElementById("cotacao-trigo").innerText = `US$ ${valor} por tonelada em ${dataFormatada}`;
-      } else {
-        document.getElementById("cotacao-trigo").innerText = "Dados indisponíveis";
-      }
-    })
-    .catch(error => {
-      console.error("Erro ao buscar dados da API:", error);
-      document.getElementById("cotacao-trigo").innerText = "Erro ao carregar dados";
-    });
-</script>
 
 </html>
