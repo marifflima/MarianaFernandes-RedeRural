@@ -72,7 +72,7 @@ body, html, header, footer{
 .carrossel1{
     padding-top: 20px;
     overflow-y: hidden;
-    overflow-x: hidden;
+    overflow-x: auto;
     min-height: 350px;
     color: #003152;
     position: relative;
