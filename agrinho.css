@@ -24,14 +24,17 @@ body, html, header, footer{
   height: 300px;     
   display: block;   
   object-fit: cover; 
+
 }
+
+
 
 .ctext{
   margin-left: 20px;
   color: #003152;
 }
 
-.imagens {
+.imagens , .card {
      height: 100px;
      width: 200px;
      display: flex;
@@ -40,13 +43,35 @@ body, html, header, footer{
      margin-right: 10px;
 }
 
+.card:hover{
+  height: 150px;
+  width: 250px;
+  transition: 0.5s;
+}
+
+.card{
+  transition: 0.5s;
+}
+
+.legenda{
+  padding: 15px;
+  height: 600px;
+}
+
+
+.legenda:hover{
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.082);
+}
+
 .carrossel1{
     padding-top: 20px;
     overflow-y: hidden;
-    overflow-x: scroll;
-    min-height: 300px;
+    overflow-x: hidden;
+    min-height: 350px;
     color: #003152;
     position: relative;
+
   }
 
 .descrição{
@@ -145,7 +170,7 @@ body, html, header, footer{
   aspect-ratio: 16 / 9;
   border-radius: 15px;
   overflow: hidden;
-  flex-shrink: 0; /* Impede que diminua */
+  flex-shrink: 0;
 }
 
 .lista iframe {
@@ -175,6 +200,18 @@ body, html, header, footer{
   padding-right: 30px;
   object-fit: cover;
 }
+
+.pf:hover{
+  width: 200px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.pf{
+  transition: 0.5s;
+}
+
+.perfis
 
 footer{
   background-color: #003152;
