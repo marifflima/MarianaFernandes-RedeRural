@@ -24,10 +24,15 @@ body, html, header, footer{
   height: 300px;     
   display: block;   
   object-fit: cover; 
-
 }
 
-
+.imgimg{
+  width: 100%;
+  -webkit-mask-image: linear-gradient(to top, transparent 5%, black 40%);
+          mask-image: linear-gradient(to top, transparent 5%, black 40%);
+          -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+}
 
 .ctext{
   margin-left: 20px;
@@ -44,7 +49,7 @@ body, html, header, footer{
 }
 
 .card:hover{
-  height: 150px;
+  height: auto;
   width: 250px;
   transition: 0.5s;
 }
@@ -60,8 +65,8 @@ body, html, header, footer{
 
 
 .legenda:hover{
-  border-radius: 5px;
-  background-color: rgba(0, 0, 0, 0.082);
+  border-radius: 10px;
+  background-color: #00315217;
 }
 
 .carrossel1{
@@ -201,6 +206,12 @@ body, html, header, footer{
   object-fit: cover;
 }
 
+.perfis:hover{
+  border-radius: 10px;
+  background-color: #00315217;
+  
+}
+
 .pf:hover{
   width: 200px;
   height: 200px;
@@ -211,16 +222,14 @@ body, html, header, footer{
   transition: 0.5s;
 }
 
-.perfis
 
 footer{
   background-color: #003152;
   width: 100%;
-  min-height: 125px;
+  height: 150px;
 }
 
 .fp{
     color: rgb(252, 244, 202);
-    text-wrap: wrap;
     margin-left: 30px;
 }
