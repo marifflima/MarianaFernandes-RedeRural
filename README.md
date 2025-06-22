@@ -4,9 +4,11 @@ Projeto desenvolvido para o Programa Agrinho 2025, com foco do fácil acesso de 
 
 O projeto consiste em um site informativo, com conteúdos como cotações de grãos, vídeos tutoriais, e agrônomos fictícios sobre educação, dedicado para que seja algo simples e direto para ser acessado.
 
+
 🌐 Site Online (GitHub Pages)
 👉 Acesse o site clicando aqui
 [https://marifflima.github.io/agrinho-programacao-2025/](https://marifflima.github.io/agrinho-programacao-2025/)
+
 
 💻 Tecnologias Utilizadas
 
@@ -14,12 +16,14 @@ HTML5
 
 CSS3
 
+
 🛠️ Funcionalidades do Site
 Estrutura simples e organizada para fácil navegação.
 
 Responsividade básica.
 
 Design limpo e focado na leitura.
+
 
 📂 Estrutura de Pastas
 
@@ -58,6 +62,7 @@ Design limpo e focado na leitura.
    │   ├── pagina-soja.html
 
    │   ├── pagina-trigo.html
+
 
 
 📊 Pasta historico-cotações
