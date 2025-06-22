@@ -22,22 +22,39 @@ Design limpo e focado na leitura.
 📂 Estrutura de Pastas
 
 📁 agrinho-programacao-2025
+
 ├── index.html
+
 ├── agrinho.css
+
 ├── 📁 historico-cotações
+
 │   ├── cotação.css
+
 │   ├── pagina-algodao.html
+
 │   ├── pagina-amendoim.html
+
 │   ├── pagina-arroz.html
+
 │   ├── pagina-boi.html
+
 │   ├── pagina-cafe.html
+
 │   ├── pagina-cana.html
+
 │   ├── pagina-dolar.html
+
 │   ├── pagina-feijao.html
+
 │   ├── pagina-frango.html
+
 │   ├── pagina-milho.html
+
 │   ├── pagina-porco.html
+
 │   ├── pagina-soja.html
+
 │   ├── pagina-trigo.html
 
 
