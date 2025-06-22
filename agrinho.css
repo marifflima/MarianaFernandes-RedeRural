@@ -234,9 +234,3 @@ footer{
     margin-left: 30px;
 }
 
-@media (max-width: 768px) {
-  body {
-    transform: scale(2.0);
-    transform-origin: top left;
-  }
-}
