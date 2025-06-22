@@ -27,35 +27,35 @@ Design limpo e focado na leitura.
 
 ├── agrinho.css
 
-├── 📁 historico-cotações
+   ├── 📁 historico-cotações
 
-│   ├── cotação.css
+   │   ├── cotação.css
 
-│   ├── pagina-algodao.html
+   │   ├── pagina-algodao.html
 
-│   ├── pagina-amendoim.html
+   │   ├── pagina-amendoim.html
 
-│   ├── pagina-arroz.html
+   │   ├── pagina-arroz.html
 
-│   ├── pagina-boi.html
+   │   ├── pagina-boi.html
 
-│   ├── pagina-cafe.html
+   │   ├── pagina-cafe.html
 
-│   ├── pagina-cana.html
+   │   ├── pagina-cana.html
 
-│   ├── pagina-dolar.html
+   │   ├── pagina-dolar.html
 
-│   ├── pagina-feijao.html
+   │   ├── pagina-feijao.html
 
-│   ├── pagina-frango.html
+   │   ├── pagina-frango.html
 
-│   ├── pagina-milho.html
+   │   ├── pagina-milho.html
 
-│   ├── pagina-porco.html
+   │   ├── pagina-porco.html
 
-│   ├── pagina-soja.html
+   │   ├── pagina-soja.html
 
-│   ├── pagina-trigo.html
+   │   ├── pagina-trigo.html
 
 
 📊 Pasta historico-cotações
