@@ -82,4 +82,5 @@ https://github.com/marifflima/agrinho-programacao-2025.git
 Abra o arquivo index.html no seu navegador.
 
 👩‍💻 Autora
+
 Projeto desenvolvido por Mariana Fátima Fernandes de Lima, como parte da participação no Programa Agrinho 2025.
