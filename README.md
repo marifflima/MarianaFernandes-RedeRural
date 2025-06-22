@@ -59,12 +59,15 @@ Design limpo e focado na leitura.
 
 
 📊 Pasta historico-cotações
+
 Nessa pasta estão reunidos os históricos dos últimos 6 meses de cotações de produtos agrícolas, com 13 arquivos HTML (cada um apresentando dados de um produto específico), além de um arquivo CSS exclusivo (cotação.css) para o estilo das páginas dessa seção.
 
 🖼️ Sobre as Imagens
+
 Todas as imagens usadas no site foram retiradas de fontes públicas na internet e são utilizadas apenas com fins educacionais, dentro do contexto do projeto Agrinho.
 
 🌟 Como Executar Localmente
+
 Clone o repositório:
 
 bash
