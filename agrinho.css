@@ -235,8 +235,8 @@ footer{
 }
 
 @media (max-width: 768px) {
-  html {
-    transform: scale(1.2);
+  body {
+    transform: scale(2.0);
     transform-origin: top left;
   }
 }
