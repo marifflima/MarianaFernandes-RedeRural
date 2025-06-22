@@ -71,7 +71,7 @@ Nessa pasta estão reunidos os históricos dos últimos 6 meses de cotações de
 
 🖼️ Sobre as Imagens
 
-Todas as imagens usadas no site foram retiradas de fontes públicas na internet e são utilizadas apenas com fins educacionais, dentro do contexto do projeto Agrinho.
+As imagens utilizadas neste site foram retiradas de fontes públicas na internet e têm uso exclusivo para fins educacionais no contexto do Programa Agrinho. Caso haja algum problema com o uso de alguma imagem, por favor entre em contato para remoção.
 
 🌟 Como Executar Localmente
 
