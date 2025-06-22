@@ -1,10 +1,8 @@
 🌱 Agrinho Programação 2025
-Projeto desenvolvido para o Programa Agrinho 2025, com foco em tecnologia, educação e transformação social por meio da programação.
 
-📌 Tema do Projeto
-"Da educação de qualidade ao futuro sustentável: o papel da tecnologia na transformação social."
+Projeto desenvolvido para o Programa Agrinho 2025, com foco do fácil acesso de informações do meio rural e pecuário.
 
-O projeto consiste em um site informativo que apresenta o trabalho realizado para o Agrinho, com conteúdos sobre educação, sustentabilidade e também um espaço dedicado ao acompanhamento de cotações agrícolas.
+O projeto consiste em um site informativo, com conteúdos como cotações de grãos, vídeos tutoriais, e agrônomos fictícios sobre educação, dedicado para que seja algo simples e direto para ser acessado.
 
 🌐 Site Online (GitHub Pages)
 👉 Acesse o site clicando aqui
@@ -22,6 +20,7 @@ Responsividade básica.
 Design limpo e focado na leitura.
 
 📂 Estrutura de Pastas
+
 📁 agrinho-programacao-2025
 ├── index.html
 ├── agrinho.css
