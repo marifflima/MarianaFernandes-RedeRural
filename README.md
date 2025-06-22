@@ -84,3 +84,7 @@ Abra o arquivo index.html no seu navegador.
 👩‍💻 Autora
 
 Projeto desenvolvido por Mariana Fátima Fernandes de Lima, como parte da participação no Programa Agrinho 2025.
+
+✉️ Email para contato
+
+fernandes.lima.mariana@escola.pr.gov.br
