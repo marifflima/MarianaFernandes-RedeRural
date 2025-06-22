@@ -9,7 +9,9 @@ O projeto consiste em um site informativo, com conteúdos como cotações de gr�
 [https://marifflima.github.io/agrinho-programacao-2025/](https://marifflima.github.io/agrinho-programacao-2025/)
 
 💻 Tecnologias Utilizadas
+
 HTML5
+
 CSS3
 
 🛠️ Funcionalidades do Site
