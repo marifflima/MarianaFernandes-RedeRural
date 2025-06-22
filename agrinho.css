@@ -233,3 +233,10 @@ footer{
     color: rgb(252, 244, 202);
     margin-left: 30px;
 }
+
+@media (max-width: 768px) {
+  html {
+    transform: scale(1.2);
+    transform-origin: top left;
+  }
+}
