@@ -77,7 +77,8 @@ Todas as imagens usadas no site foram retiradas de fontes públicas na internet 
 
 Clone o repositório:
 
-clone https://github.com/marifflima/agrinho-programacao-2025.git
+https://github.com/marifflima/agrinho-programacao-2025.git
+
 Abra o arquivo index.html no seu navegador.
 
 👩‍💻 Autora
